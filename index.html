@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="styles/css/index.css" />
   </head>
   <body>
+    <div class="hero">
+      <strong>Hello World!</strong>
+      <div class="hero-particles" id="particles-js"></div>
+      <video autoplay loop muted preload>
+        <source src="styles/video/hero.mp4" type="video/mp4" />
+      </video>
+    </div>
+
     <header class="header">
       <h1 class="header-logo">
         <a href="#">
@@ -31,7 +39,7 @@
       <nav class="header-nav">
         <ul class="header-navlist">
           <li class="header-navitem">
-            <a href="#">About</a>
+            <a href="#introduction">自己紹介</a>
           </li>
           <li class="header-navitem">
             <a href="#">Feature</a>
@@ -46,7 +54,7 @@
       </nav>
     </header>
     <section class="section">
-      <h1 class="section-headline">Product</h1>
+      <h1 id="introduction" class="section-headline">自己紹介</h1>
       <figure class="about">
         <img
           src="https://dummyimage.com/600x400/000/fff"
@@ -54,19 +62,16 @@
           class="about-image"
         />
         <figcaption class="about-caption">
-          <h2 class="about-headline">What we can do?</h2>
+          <h2 class="about-headline">影山亮太</h2>
           <p class="about-description">
-            Text text text text text text text text text text text text text
-            Text text text text text text text text text text text text text
-            Text text text text text text text text text text text text text<br />
-            text text text text text text text text text text text text text
-            text text text Text text text text text text text text text text
-            text text text<br />
-            <br />
-            Text text text text text text text text text text text text text<br />
-            text text text text text text text text text text text text text
-            text text text<br />
-            Text text text text text text text text text text text text text<br />
+            出身地:福岡県大野城市 <br />
+            趣味:プログラミング（ただし大学のプログラミングは嫌い。なぜならやれることが少ないし技術も古いから）<br />
+            将来:バックエンドエンジニア <br />
+            学歴:九州産業高校=>福岡工業大学情報工学部情報システム工学科<br />
+            経験したことがある技術&言語: Ruby on Rails Ruby javascript React
+            Vue.js Laravel java php Azure Github Git Heroku<br />
+            これから使ってみたい技術: AWS, Terraform, Circle CI <br />
+            最後に一言:よろしく！！！
           </p>
         </figcaption>
       </figure>
@@ -293,5 +298,8 @@
       <hr class="footer-line" />
       <small class="footer-copy">Copyright ©BugFix Inc.</small>
     </footer>
+
+    <script src="./styles/js/particles.min.js"></script>
+    <script src="./styles/js/app.js"></script>
   </body>
 </html>
